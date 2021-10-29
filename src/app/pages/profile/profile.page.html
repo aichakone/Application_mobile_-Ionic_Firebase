@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Profile</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+    <ion-grid>
+        <ion-row>
+            <ion-col text-center>
+                Bienvenue !
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col text-center>
+                <img src="assets/Capture.PNG" width="50px"> Votre identifiant de messagerie enregistré : {{userEmail}}
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
+<ion-footer (click)="logout()">
+    <ion-toolbar color="secondary">
+        <ion-title>Deconnexion</ion-title>
+    </ion-toolbar>
+</ion-footer>

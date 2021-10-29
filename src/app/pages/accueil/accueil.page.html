@@ -1,0 +1,11 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Accueil</ion-title>
+        <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-item *ngFor="let item of items |async">
+        <p>{{item.username}}</p>
+    </ion-item>
+</ion-content>

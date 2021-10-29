@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title></ion-title>
+        <ion-searchbar class="sear" (ionInput)="filterList($event)"></ion-searchbar>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-list lines="none">
+        <ion-item *ngFor="let item of userList">
+            <ion-label class="ion-text-wrap">
+                <ion-text color="primary">
+                    <h3>{{ item.username }}</h3>
+                </ion-text>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>

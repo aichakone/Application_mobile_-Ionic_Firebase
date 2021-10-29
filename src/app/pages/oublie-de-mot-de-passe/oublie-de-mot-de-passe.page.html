@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Reinitialiser votre mot de passe</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form>
+        <ion-item lines="full">
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email" required></ion-input>
+        </ion-item>
+
+        <ion-row>
+            <ion-col>
+                <ion-button expand="block" shape="round" (click)="show ()" type="submit" color="dark" expand="block">Envoyer</ion-button>
+            </ion-col>
+        </ion-row>
+        <ion-button color="tertiary" expand="block" shape="round" routerLink="/re-initialisation">Restauration de mot de passe</ion-button>
+        <small>
+      </small>
+    </form>
+</ion-content>

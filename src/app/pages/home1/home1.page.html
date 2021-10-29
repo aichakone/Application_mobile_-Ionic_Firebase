@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            <strong>Welcome</strong>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-searchbar showcancelbutton="" (ionInput)="filterList($event"></ion-searchbar>
+    <ion-list lines="none">
+        <ion-item *ngFor="let item of items |async">
+            <h2>{{ item.userName }}</h2>
+        </ion-item>
+        <ion-button routerLink="/profile" color="secondary">Profile</ion-button>
+</ion-content>
